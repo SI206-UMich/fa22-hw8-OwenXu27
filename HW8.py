@@ -8,6 +8,7 @@ import os
 import sqlite3
 import unittest
 
+
 def get_restaurant_data(db_filename):
     """
     This function accepts the file name of a database as a parameter and returns a list of
