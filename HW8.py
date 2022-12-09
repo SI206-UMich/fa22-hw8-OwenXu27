@@ -71,14 +71,7 @@ def highest_rated_category(db_filename):#Do this through DB as well
     conn = sqlite3.connect(path+'/'+db_filename)
     cur = conn.cursor()
     cur.execute(
-        """
-        SELECT category, rating
-        FROM restaurants 
-        JOIN categories 
-        ON restaurants.category_id = categories.id 
-        GROUP BY category_id
-        ORDER BY rating ASC
-        """
+        "SELECT category, rating FROM restaurants JOIN categories ON restaurants.category_id = categories.id GROUP BY category_id ORDER BY rating ASC"
     )
     data = cur.fetchall()
     new = {}
