@@ -1,3 +1,8 @@
+# Your name: Jianxuan Xu
+# Your student id:42940584
+# Your email: jianxux@umich.edu
+# List who you have worked with on this project: Frederick Kusumo
+
 import matplotlib.pyplot as plt
 import os
 import sqlite3
